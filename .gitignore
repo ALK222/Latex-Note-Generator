@@ -32,6 +32,4 @@
 *.app
 
 # Visual Studio Stuff
-
-./Latex-Note-Generator/Debug
-./.vs
+.vs/
