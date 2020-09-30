@@ -1,15 +1,17 @@
+/**
+ *
+ * @file Main.cpp
+ *
+ * @author Alejandro Barrachina Argudo
+ *
+ *
+ * 
+ */
+
 #include <iostream>
 #include "LatexGenerator.hpp"
 #include "Main.hpp"
 
-/**
- * @file Main.cpp
- * 
- * @author Alejandro Barrachina Argudo
- *
- * 
- *
- */
 
 
 int main(int argc, const char *argv[])

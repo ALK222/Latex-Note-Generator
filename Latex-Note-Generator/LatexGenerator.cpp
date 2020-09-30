@@ -1,3 +1,13 @@
+/**
+ *
+ * @file LatexGenerator.cpp
+ *
+ * @author Alejandro Barrachina Argudo
+ *
+ *
+ *
+ */
+
 #include "LatexGenerator.hpp"
 
 
