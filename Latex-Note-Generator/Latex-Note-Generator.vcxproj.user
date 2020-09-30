@@ -4,4 +4,8 @@
     <LocalDebuggerCommandArguments>-a A.L.K. -p D:\\Code\\LaTex-Stuff\\  -s Ingenieria del software  1 -ac IS1</LocalDebuggerCommandArguments>
     <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LocalDebuggerCommandArguments>-a alk -s "fundamentos de la algoritmia" -p "D:\Code\Latex-Note-Generator\x64\Release"</LocalDebuggerCommandArguments>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+  </PropertyGroup>
 </Project>
