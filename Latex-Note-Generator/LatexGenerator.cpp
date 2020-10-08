@@ -91,7 +91,7 @@ void LatexGenerator::generateMainFile() {
 			outfile << "\\justifying" << std::endl;
 			outfile << "\\title{" + _subject + "}" << std::endl;
 			outfile << "\\author{" + _author + "}" << std::endl;
-			outfile << "\\date{" + monthToString(aTime->tm_mon + 1) + " " + std::to_string(aTime->tm_year) + '}' << std::endl;
+			outfile << "\\date{" + monthToString(aTime->tm_mon + 1) + " " + std::to_string(aTime->tm_year + 1900) + '}' << std::endl;
 			outfile << std::endl;
 			outfile << "\\begin{document}" << std::endl;
 			outfile << "\\maketitle" << std::endl;

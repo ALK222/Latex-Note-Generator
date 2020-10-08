@@ -5,7 +5,7 @@
     <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <LocalDebuggerCommandArguments>-a alk -s "fundamentos de la algoritmia" -p "D:\Code\Latex-Note-Generator\x64\Release"</LocalDebuggerCommandArguments>
+    <LocalDebuggerCommandArguments>-a alk -s "fundamentos de la algoritmia" -p </LocalDebuggerCommandArguments>
     <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
   </PropertyGroup>
 </Project>

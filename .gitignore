@@ -33,3 +33,5 @@
 
 # Visual Studio Stuff
 .vs/
+x64/
+Latex-Note-Generator/x64

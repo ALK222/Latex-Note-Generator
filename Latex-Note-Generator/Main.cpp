@@ -16,7 +16,6 @@ int main(int argc, const char* argv[])
 {
 	Data d;
 	std::string path = std::filesystem::current_path().u8string();
-	std::cout << path;
 	try
 	{
 		cxxopts::Options options(argv[0], "LaTeX note generator");
@@ -45,13 +44,14 @@ void parseOptions(cxxopts::Options option, Data& d, int& argc, const char* argv[
 {
 	auto result = option.parse(argc, argv);
 
-	if (argc == 1 || result.count("help")) {
+	if (argv[1] == NULL || result.count("help")) {
 		std::cout << option.help() << std::endl;
 		exit(0);
 	}
 
 	// Author parse
 	if (!result.count("author")) {
+		std::cout << "No author found" << std::endl;
 		std::cout << option.help() << std::endl;
 		exit(1);
 	}
@@ -69,12 +69,13 @@ void parseOptions(cxxopts::Options option, Data& d, int& argc, const char* argv[
 
 	// Subject parse
 
-	if (result.count("subject")) {
-		d.subject = result["subject"].as<std::string>();
-	}
-	else {
+	if (!result.count("subject")) {
+		std::cout << "No subject found" << std::endl;
 		std::cout << option.help() << std::endl;
 		exit(1);
+	}
+	else {
+		d.subject = result["subject"].as<std::string>();
 	}
 
 	// Acronym parse
