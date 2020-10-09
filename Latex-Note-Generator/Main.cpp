@@ -21,7 +21,7 @@ int main(int argc, const char* argv[])
 		cxxopts::Options options(argv[0], "LaTeX note generator");
 		options.add_options()
 			("a, author", "Author of the notes", cxxopts::value<std::string>())
-			("p, path", "Path for the folder to generate", cxxopts::value<std::string>()->default_value(path)->implicit_value(path))
+			("p, path", "Path for the folder to generate", cxxopts::value<std::string>()->default_value(path))
 			("s, subject", "Name of the lesson", cxxopts::value<std::string>())
 			("c, acronym", "Acronym of the lesson", cxxopts::value<std::string>())
 			("h, help", "Print usage");
