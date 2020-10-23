@@ -15,6 +15,9 @@
 #include "cxxopts.hpp"
 #include <filesystem>
 
+/// <summary>
+/// Stores the data for the folder generator
+/// </summary>
 struct Data
 {
 	std::string author;
@@ -25,4 +28,5 @@ struct Data
 
 
 void parseOptions(cxxopts::Options option, Data& d, int& argc, const char* argv[]);
+
 std::string createAcronym(std::string subject);

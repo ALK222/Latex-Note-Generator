@@ -10,7 +10,13 @@
 
 #include "LatexGenerator.hpp"
 
-
+/**
+ * @brief Constructor for the LatexGenerator class
+ * @param path Path to generate the folder
+ * @param author Author fo the notes
+ * @param subject Subject for the notes
+ * @param acron Acronym of the subject
+*/
 LatexGenerator::LatexGenerator(std::string path, std::string author, std::string subject, std::string acron) {
 	_path = path;
 	_author = author;
@@ -18,6 +24,9 @@ LatexGenerator::LatexGenerator(std::string path, std::string author, std::string
 	_acron = acron;
 }
 
+/**
+ * @brief Generates the folder, subfolders and main .tex file
+*/
 void LatexGenerator::generateProject()
 {
 	try
@@ -33,7 +42,9 @@ void LatexGenerator::generateProject()
 	
 }
 
-
+/**
+ * @brief generates the folder for the project, if it already exist it does nothing
+*/
 void LatexGenerator::generatePath() {
 	try
 	{
@@ -51,6 +62,9 @@ void LatexGenerator::generatePath() {
 	}
 }
 
+/**
+ * @brief generates the subfolders for the project
+*/
 void LatexGenerator::generateSubPaths() {
 	try
 	{
@@ -74,6 +88,9 @@ void LatexGenerator::generateSubPaths() {
 	}
 }
 
+/**
+ * @brief generates the main file for the proyect with the month and year, author and subject
+*/
 void LatexGenerator::generateMainFile() {
 	try
 	{
@@ -111,6 +128,11 @@ void LatexGenerator::generateMainFile() {
 	}
 }
 
+/**
+ * @brief Parses the month for it's spanish string
+ * @param month Number of the month given by the system
+ * @return The name of the month
+*/
 std::string LatexGenerator::monthToString(int month) {
 	switch (month)
 	{

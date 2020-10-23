@@ -40,6 +40,13 @@ int main(int argc, const char* argv[])
 	return 0;
 }
 
+/**
+ * @brief Parses the command line
+ * @param option Parser
+ * @param d Structure where the values are stored
+ * @param argc Number of parameters to parse
+ * @param argv Values to parse
+*/
 void parseOptions(cxxopts::Options option, Data& d, int& argc, const char* argv[])
 {
 	auto result = option.parse(argc, argv);
@@ -87,6 +94,11 @@ void parseOptions(cxxopts::Options option, Data& d, int& argc, const char* argv[
 	}
 }
 
+/**
+ * @brief Creates a subject acronym if not given one
+ * @param subject Subject to generate the acronym
+ * @return The first letter of every word in the subject
+*/
 std::string createAcronym(std::string subject) {
 	std::string result = "";
 	bool v = true;
