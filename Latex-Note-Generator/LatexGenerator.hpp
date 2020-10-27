@@ -15,6 +15,9 @@
 #include <filesystem>
 #include <time.h>
 
+/**
+ * @brief Generator of LaTeX proyect for University notes
+*/
 class LatexGenerator
 {
 public:
