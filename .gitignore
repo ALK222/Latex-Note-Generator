@@ -1,5 +1,30 @@
-# Prerequisites
-*.d
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Bb]uild/
+
+
+# VSCode
+.vscode
+
+# IntelliJ/CLion
+.idea
+*.iml
+/cmake-build-debug/
+
+# Executables
+*.exe
+*.out
+*.app
+*.db
 
 # Compiled Object files
 *.slo
@@ -7,31 +32,23 @@
 *.o
 *.obj
 
-# Precompiled Headers
-*.gch
-*.pch
+# Visual C++ cache files
+ipch/
+*.aps
+*.ncb
+*.opendb
+*.opensdf
+*.sdf
+*.cachefile
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
+# Visual Studio profiler
+*.psess
+*.vsp
+*.vspx
+*.sap
 
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
-
-# Visual Studio Stuff
-.vs/
-x64/
-Latex-Note-Generator/x64
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
